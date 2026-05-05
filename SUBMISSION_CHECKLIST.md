@@ -4,10 +4,9 @@
 
 ## Repository
 
-- **URL**: `<your-repo-url>`
-- **Before final submission**: replace this placeholder with your review repository URL.
+- **URL**: `https://github.com/Laurentzius/signal-lab-test`
 - **Branch**: `main`
-- **Time worked**: ~8 hours
+- **Time worked**: 3h 05m (05.05.2026 05:10-08:15)
 
 ---
 
@@ -130,12 +129,18 @@ docker compose down
 
 ## Screenshots / Videos
 
-Automated evidence is in `docs/verification-evidence.md` and can be regenerated with `npm run verify`. Screenshots/videos are optional final-review attachments:
+Automated evidence is in `docs/verification-evidence.md` and can be regenerated with `npm run verify`. Screenshots/videos are optional final-review attachments.
 
-- [ ] UI application (`http://localhost:3000`)
-- [ ] Grafana dashboard with data (`http://localhost:3100`)
+Committed screenshot evidence:
+
+- `screenshots/signal-lab-ui.png`
+- `screenshots/graphana.png`
+- `screenshots/sentry(need_dsn_in_env).png`
+
+- [x] UI application (`http://localhost:3000`)
+- [x] Grafana dashboard with data (`http://localhost:3100`)
 - [ ] Loki logs (Grafana → Explore → Loki)
-- [ ] Sentry error (Sentry dashboard, requires local `SENTRY_DSN`)
+- [x] Sentry setup note / DSN requirement (`screenshots/sentry(need_dsn_in_env).png`)
 
 ## Automated Review Evidence
 
