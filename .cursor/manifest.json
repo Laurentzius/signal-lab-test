@@ -1,0 +1,47 @@
+{
+  "project": "signal-lab",
+  "purpose": "Make Cursor productive in new chats without manual onboarding.",
+  "rules": [
+    "rules/stack-constraints.md",
+    "rules/observability-conventions.md",
+    "rules/prisma-patterns.md",
+    "rules/frontend-patterns.md",
+    "rules/error-handling.md"
+  ],
+  "customSkills": [
+    "skills/observability-integration/SKILL.md",
+    "skills/nestjs-endpoint-scaffold/SKILL.md",
+    "skills/prisma-schema-review/SKILL.md",
+    "skills/signal-lab-orchestrator/SKILL.md"
+  ],
+  "commands": [
+    "commands/add-endpoint.md",
+    "commands/check-obs.md",
+    "commands/health-check.md",
+    "commands/run-prd.md"
+  ],
+  "hooks": [
+    {
+      "name": "after-new-endpoint",
+      "definition": "hooks/after-new-endpoint.md",
+      "script": "hooks/scripts/check-endpoint-observability.ps1"
+    },
+    {
+      "name": "after-schema-change",
+      "definition": "hooks/after-schema-change.md",
+      "script": "hooks/scripts/check-prisma-migration.ps1"
+    }
+  ],
+  "verificationScript": "scripts/verify-ai-layer.ps1",
+  "marketplaceSkills": "marketplace-skills.json",
+  "marketplaceSkillBindings": [
+    "skills/marketplace-next-best-practices/SKILL.md",
+    "skills/marketplace-shadcn-ui/SKILL.md",
+    "skills/marketplace-tailwind-design-system/SKILL.md",
+    "skills/marketplace-nestjs-best-practices/SKILL.md",
+    "skills/marketplace-prisma-orm/SKILL.md",
+    "skills/marketplace-docker-expert/SKILL.md",
+    "skills/marketplace-postgresql-table-design/SKILL.md"
+  ],
+  "orchestratorExample": ".execution/2026-05-05-assignment-check/context.json"
+}

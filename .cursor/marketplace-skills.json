@@ -1,0 +1,44 @@
+[
+  {
+    "name": "next-best-practices",
+    "source": "marketplace",
+    "binding": "skills/marketplace-next-best-practices/SKILL.md",
+    "why": "Enforces App Router, routing, and rendering conventions for Next.js."
+  },
+  {
+    "name": "shadcn-ui",
+    "source": "marketplace",
+    "binding": "skills/marketplace-shadcn-ui/SKILL.md",
+    "why": "Keeps UI work aligned with shadcn component conventions."
+  },
+  {
+    "name": "tailwind-design-system",
+    "source": "marketplace",
+    "binding": "skills/marketplace-tailwind-design-system/SKILL.md",
+    "why": "Keeps spacing, responsive states, and theme tokens consistent."
+  },
+  {
+    "name": "nestjs-best-practices",
+    "source": "marketplace",
+    "binding": "skills/marketplace-nestjs-best-practices/SKILL.md",
+    "why": "Keeps backend modules, controllers, services, and DI idiomatic."
+  },
+  {
+    "name": "prisma-orm",
+    "source": "marketplace",
+    "binding": "skills/marketplace-prisma-orm/SKILL.md",
+    "why": "Guides schema, migrations, and Prisma Client usage."
+  },
+  {
+    "name": "docker-expert",
+    "source": "marketplace",
+    "binding": "skills/marketplace-docker-expert/SKILL.md",
+    "why": "Guides Docker Compose, service health, and containerized DX."
+  },
+  {
+    "name": "postgresql-table-design",
+    "source": "marketplace",
+    "binding": "skills/marketplace-postgresql-table-design/SKILL.md",
+    "why": "Guides PostgreSQL data modelling and table design."
+  }
+]

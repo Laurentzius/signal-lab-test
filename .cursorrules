@@ -1,0 +1,28 @@
+# Signal Lab — Cursor Project Rules
+
+This is an observability playground built with Next.js + NestJS + Prisma + PostgreSQL.
+
+## Quick Reference
+
+- **Rules**: See `.cursor/rules/` for detailed constraints
+- **Skills**: See `.cursor/skills/` for reusable workflows
+- **Commands**: See `.cursor/commands/` for slash commands
+- **Hooks**: See `.cursor/hooks/` for automated checks
+- **Docs**: See `.cursor/ai-layer.md` for full AI layer documentation
+
+## Stack (DO NOT CHANGE)
+
+- Frontend: Next.js (App Router), shadcn/ui, Tailwind CSS, TanStack Query, React Hook Form
+- Backend: NestJS, TypeScript strict
+- Database: PostgreSQL 16 via Prisma
+- Observability: Sentry, Prometheus, Grafana, Loki
+
+## Key Patterns
+
+- All server state → TanStack Query (no Redux, no SWR)
+- All forms → React Hook Form + Zod
+- All UI → shadcn/ui components (no custom Button/Card/Input)
+- All DB → Prisma (no raw SQL, no other ORM)
+- All metrics → prom-client (Prometheus format)
+- All logs → structured JSON via NestJS Logger
+- All errors → HttpException subclasses + Sentry for system_error

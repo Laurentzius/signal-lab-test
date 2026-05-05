@@ -1,0 +1,15 @@
+{
+  "name": "signal-lab",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "npm --prefix apps/backend run build",
+    "build:frontend": "npm --prefix apps/frontend run build",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "npm --prefix apps/backend run test",
+    "test:frontend": "npm --prefix apps/frontend run test",
+    "check:ai-layer": "powershell -ExecutionPolicy Bypass -File .cursor/scripts/verify-ai-layer.ps1",
+    "verify": "npm run test && npm run build && npm run check:ai-layer"
+  }
+}

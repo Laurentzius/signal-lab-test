@@ -1,0 +1,9 @@
+**/node_modules
+**/.next
+**/dist
+**/.turbo
+**/.cache
+.git
+.env
+*.log
+docker-compose.override.yml

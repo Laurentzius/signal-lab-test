@@ -1,0 +1,16 @@
+{
+  "hooks": [
+    {
+      "name": "after-new-endpoint",
+      "trigger": "after modifying apps/backend/src/**/*.controller.ts or apps/backend/src/**/*.service.ts",
+      "command": "powershell -ExecutionPolicy Bypass -File .cursor/hooks/scripts/check-endpoint-observability.ps1 <changed-file>",
+      "purpose": "Prevent endpoints without metrics, structured logs, or proper NestJS HTTP errors."
+    },
+    {
+      "name": "after-schema-change",
+      "trigger": "after modifying prisma/schema.prisma",
+      "command": "powershell -ExecutionPolicy Bypass -File .cursor/hooks/scripts/check-prisma-migration.ps1",
+      "purpose": "Prevent stale Prisma Client types and missing migrations."
+    }
+  ]
+}
